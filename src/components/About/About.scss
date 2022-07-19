@@ -1,0 +1,81 @@
+.about {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+
+    &_left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .customer {
+            position: absolute;
+            width: 5rem;
+            height: 5rem;
+            background-color: var(--bg-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            left: -4rem;
+            top: 5rem;
+            text-align: center;
+            border-top-right-radius: 25%;
+            border-bottom-left-radius: 25%;
+            z-index: 1;
+            h2 {
+                font-size: 1.2rem;
+                color: var(--body-bg-color);
+            }
+            h4 {
+                color: var(--body-bg-color);
+                font-size: 0.6rem;
+                font-weight: 400;
+            }
+        }
+        .round {
+            height: 20rem;
+            width: 20rem;
+            // background-color: blue;
+            border: 1px solid var(--body-bg-color);
+            position: relative;
+            border-radius: 50%;
+            box-shadow: var(--box-shadow);
+        }
+
+        img {
+            position: absolute;
+            height: 18rem;
+            width: 18rem;
+            object-fit: cover;
+            left: 2rem;
+        }
+    }
+    &_right {
+        width: 90%;
+        display: flex;
+        gap: 1rem;
+        align-items: left;
+        justify-content: center;
+        flex-direction: column;
+
+        h4 {
+            color: var(--font-h-color);
+            font-size: 1rem;
+            border-bottom: 1px solid var(--bg-color);
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 2rem;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            color: var(--font-color);
+        }
+        p {
+            color: var(--font-color);
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    }
+}

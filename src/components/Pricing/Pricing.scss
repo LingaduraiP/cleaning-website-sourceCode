@@ -1,0 +1,83 @@
+.pricing {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    h2 {
+        font-size: 2.5rem;
+        color: var(--font-color);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    h4 {
+        color: var(--bg-color);
+        font-size: 1rem;
+    }
+    .pricing_container {
+        margin-top: 2rem;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        justify-content: center;
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            flex-direction: column;
+            box-shadow: var(--box-shadow);
+            padding: 2.5rem 0;
+            transition: all 0.3s;
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                color: var(--font-color);
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 700;
+            }
+            .rate {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                span {
+                    &:nth-of-type(1) {
+                        color: var(--font-h-color);
+                        font-size: 3rem;
+                        font-weight: 700;
+                    }
+                    &:nth-of-type(2) {
+                        color: var(--font-color);
+                    }
+                }
+            }
+
+            .text {
+                margin-top: 2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                span {
+                    display: flex;
+                    align-items: center;
+                    gap: 2rem;
+                    svg {
+                        color: var(--font-color);
+                        font-size: 1.5rem;
+                    }
+                    p {
+                        color: var(--font-color);
+                        font-size: 1rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

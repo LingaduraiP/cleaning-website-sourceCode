@@ -1,0 +1,81 @@
+.slider {
+    button {
+        position: fixed;
+        height: 3rem;
+        width: 3rem;
+        border: none;
+        outline: none;
+        top: 10rem;
+        right: 1rem;
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        svg {
+            height: 2rem;
+            width: 2rem;
+            color: var(--bg-color);
+            text-align: center;
+        }
+    }
+}
+.sliders {
+    position: fixed;
+    height: 100%;
+    width: 20rem;
+    top: 0;
+    right: 0;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 99;
+    h4 {
+        color: var(--body-bg-color);
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        font-size: 2rem;
+        font-weight: 400;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+.input {
+    outline: none;
+    // border: none;
+    // background-color: none;
+    -webkit-appearance: none;
+    height: 0.5rem;
+    width: 10rem;
+    border-radius: 10px;
+    border: 1px solid var(--body-bg-color);
+    background: linear-gradient(
+        to right,
+        hsl(0, 70%, 50%),
+        hsl(30, 70%, 50%),
+        hsl(60, 70%, 50%),
+        hsl(90, 70%, 50%),
+        hsl(120, 70%, 50%),
+        hsl(150, 70%, 50%),
+        hsl(180, 70%, 50%),
+        hsl(210, 70%, 50%),
+        hsl(240, 70%, 50%),
+        hsl(270, 70%, 50%),
+        hsl(300, 70%, 50%),
+        hsl(330, 70%, 50%),
+        hsl(360, 70%, 50%)
+    );
+
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 1.3rem;
+        width: 1.3rem;
+        border-radius: 50%;
+        background-color: var(--body-bg-color);
+        cursor: pointer;
+    }
+}

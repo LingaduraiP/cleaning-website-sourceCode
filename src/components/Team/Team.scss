@@ -1,0 +1,76 @@
+.team {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+    h4 {
+        color: var(--font-h-color);
+        font-size: 1rem;
+    }
+    h2 {
+        color: var(--font-color);
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+    .items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        width: 90%;
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+                .text {
+                  
+                    border-top-left-radius: 25%;
+                    border-bottom-right-radius: 25%;
+                }
+            }
+            .circle {
+                height: 250px;
+                width: 250px;
+                border-radius: 50%;
+                box-shadow: var(--box-shadow);
+                position: relative;
+                img {
+                    height: 250px;
+                    width: 250px;
+                    border-radius: 50%;
+                }
+                .text {
+                    bottom: -1rem;
+                    right: 30%;
+                    height: 3rem;
+                    width: 7rem;
+                    position: absolute;
+                    background-color: var(--bg-color);
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    border-top-right-radius: 25%;
+                    border-bottom-left-radius: 25%;
+                    transition: all 0.3s;
+                    h3 {
+                        color: var(--body-bg-color);
+                        font-size: 1rem;
+                        text-transform: capitalize;
+                    }
+                    span {
+                        color: var(--body-bg-color);
+                        font-size: 0.6rem;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+}

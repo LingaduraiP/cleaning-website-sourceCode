@@ -1,0 +1,50 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .home-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 2rem;
+
+        .home-L {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            width: 90%;
+            gap: 2rem;
+
+            h2 {
+                color: var(--bg-color);
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+            p {
+                font-size: 0.8rem;
+                letter-spacing: 1px;
+                text-align: center;
+                color: var(--font-color);
+            }
+        }
+        .home-R {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            width: 90%;
+            .round {
+                width: 20rem;
+                height: 20rem;
+                border-radius: 50%;
+                background-color: var(--bg-color);
+                position: absolute;
+                z-index: -1;
+            }
+            .img {
+                object-fit: cover;
+            }
+        }
+    }
+}

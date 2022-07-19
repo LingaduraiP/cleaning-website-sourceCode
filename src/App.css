@@ -1,0 +1,79 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+/* Root variable */
+:root {
+    --hue: 200;
+
+    /* boxshadow */
+
+    --box-shadow: 0 0 10px 10px hsla(var(--hue), 70%, 50%, 0.1);
+
+    /* background color */
+    --bg-color: hsl(var(--hue), 70%, 50%);
+    --body-bg-color: hsl(var(--hue), 50%, 90%);
+
+    /* font color */
+    --font-h-color: hsl(var(--hue), 70%, 50%);
+    --font-color: hsl(var(--hue), 52%, 27%);
+}
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* margin: 0;
+    padding: 0; */
+}
+
+/* Global style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--body-bg-color);
+    width: 100vw;
+    padding: 0 5rem;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 5rem;
+}
+.btn {
+    padding: 0.4rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background-color: var(--bg-color);
+    font-size: 1.2rem;
+    color: var(--body-bg-color);
+}
+.btn:hover {
+    background-color: var(--body-bg-color);
+    font-size: 1.2rem;
+    color: var(--bg-color);
+    border: 1px solid var(--bg-color);
+    cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+    background-color: var(--body-bg-color);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--bg-color);
+}
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+
+        padding: 0 1rem;
+    }
+}

@@ -1,0 +1,32 @@
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+    // background-color: var(--bg-color);
+    hr {
+        border-top: 3px solid var(--bg-color);
+        width: 100%;
+    }
+    h2 {
+        color: var(--font-color);
+        font-size: 2rem;
+        text-transform: capitalize;
+    }
+    .icons {
+        display: flex;
+        gap: 2rem;
+        svg {
+            font-size: 2rem;
+            color: var(--bg-color);
+            // background-color: ;
+            transition: all 0.3s;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
